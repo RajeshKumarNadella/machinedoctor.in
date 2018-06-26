@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="E:\Rajesh\Bootstrap\login_page.css">
+	</head>
+	<body>
+		
+			<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand"><img src="E:\Rajesh\Bootstrap\images\machine_Doctor.png" alt="project Logo" width="200px", height=	"50px;"></a>
+				<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarResponsive">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item" >
+							<a href="#" class="nav-link active">Safety to your data</a>
+						</li>
+					</ul>	
+				</div>
+				<div class="dropdown">
+					<button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+						For Clinic & Hosipitals
+					</button>	
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#">Software for Clinics</a>
+						<a class="dropdown-item" href="#">Software for Hosipitals</a>
+						<a class="dropdown-item" href="#">Advertising</a>
+						<a class="dropdown-item" href="#">List your practise for free</a>
+						</div>
+				</div>
+					<button onclick="document.getElementById('id01').style.display='block'" class="btn btn-light">Login / Sign Up</button>
+
+<!-- The Modal -->
+				<div id="id01" class="modal">
+					<span onclick="document.getElementById('id01').style.display='none'" 
+					class="close" title="Close Modal">&times;</span>
+
+ <!-- Modal Content -->
+				<form class="modal-content animate" action="/action_page.php">
+					<div class="imgcontainer">
+						<img src="img_avatar2.png" alt="Avatar" class="avatar">
+					</div>
+
+					<div class="container">
+						<label for="uname"><b>Username</b></label>
+						<input type="text" placeholder="Enter Username" name="uname" required>
+
+						<label for="psw"><b>Password</b></label>
+						<input type="password" placeholder="Enter Password" name="psw" required>
+
+						<button type="submit">Login</button>
+						<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+						</label>
+					</div>
+
+					<div class="container" style="background-color:#f1f1f1">
+						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+						<span class="psw">Forgot <a href="#">password?</a></span>
+					</div>
+				</form>
+				</div>
+				</nav>
+	</body>
+</html>
