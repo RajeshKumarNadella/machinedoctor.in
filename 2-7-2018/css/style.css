@@ -4,9 +4,14 @@
   top: 5px;
   left: 5px;
 }
-
+#app_section {
+    background: url(../img/hero_bg_1.svg) fixed #3f4079;
+    padding: 90px 0 60px;
+    color: #fff;
+}
 .carousel{
     background: ;
+    margin-top: 20px;
     margin-top: 20px;
 }
 .carousel .item{
